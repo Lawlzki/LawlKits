@@ -18,19 +18,19 @@ public class LawlKits extends JavaPlugin implements Listener {
 
 		mainPlugin = this;
 
-		getCommand("kit").setExecutor(new KitPluginCommand(this));
+		getCommand("lkit").setExecutor(new KitPluginCommand(this));
 	}
 
 public static void help(Player player) {
 		player.sendMessage(ChatColor.GREEN + "=================["
 				+ ChatColor.BLUE + "LawlKits" + ChatColor.GREEN
 				+ "]=================");
-		player.sendMessage(ChatColor.YELLOW + "/kit [kit]" + ChatColor.BLUE
+		player.sendMessage(ChatColor.YELLOW + "/lkit [kit]" + ChatColor.BLUE
 				+ " - Allows you to choose a kit");
 		player.sendMessage(ChatColor.GRAY
 				+ "   (Aliases: kits, class, classes)");
 		player.sendMessage(ChatColor.GRAY
-				+ "   (Available Kits: Tim, Fun)");
+				+ "   (Available Kits: Tim)");
 		player.sendMessage(ChatColor.GREEN
 				+ "========================================");
 	}
